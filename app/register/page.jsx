@@ -53,10 +53,10 @@ const RegisterPage = () => {
   }
 
   return (
-    <div className="flex flex-col items-center min-h-screen justify-center px-16 py-1">
+    <div className="flex flex-col items-center min-h-screen justify-center px-16 py-1 ">
       <form
         onSubmit={submitHandler}
-        className="flex flex-col gap-6 items-center justify-center w-[30rem]"
+        className="flex flex-col gap-6 items-center justify-center lg:w-[30rem] sm:w-[26em] w-[21em]"
       >
         <input
           type="text"
@@ -84,8 +84,8 @@ const RegisterPage = () => {
           Register
         </button>
       </form>
-      
-      <div className="flex items-center gap-2 w-[30rem] mt-4 p-2">
+
+      <div className="flex items-center gap-2 lg:w-[30rem] sm:w-[26em] w-[21em] mt-4 p-2">
         <p className="text-sm">Have an account? </p>
         <Link
           href="/login"

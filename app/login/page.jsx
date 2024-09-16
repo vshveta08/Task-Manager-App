@@ -63,7 +63,7 @@ const LoginPage = () => {
     <div className="flex flex-col items-center justify-center min-h-screen px-16 py-1">
       <form
         onSubmit={submitHandler}
-        className="flex flex-col gap-6 items-center justify-center w-[30rem]"
+        className="flex flex-col gap-6 items-center justify-center lg:w-[30rem] sm:w-[26em] w-[21em]"
       >
         <input
           type="email"
@@ -83,7 +83,7 @@ const LoginPage = () => {
         <button className="px-6 py-2 rounded-sm w-full mt-2">Login</button>
       </form>
 
-      <div className="flex items-center gap-2 w-[30rem] mt-4 p-2">
+      <div className="flex items-center gap-2 lg:w-[30rem] sm:w-[26em] w-[21em] mt-4 p-2">
         <p className="text-sm">Don&apos;t have an account? </p>
         <Link
           href="/register"

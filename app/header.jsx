@@ -8,7 +8,7 @@ import { Spin as Hamburger } from "hamburger-react";
 export default function Header() {
   const [ham, setHam] = useState(false);
   return (
-    <div className="w-full fixed flex backdrop-blur-md items-center justify-between px-24 py-1 nav">
+    <div className="w-full fixed flex backdrop-blur-md items-center justify-between lg:px-24 md:px-24 sm:px-24 px-12 py-1 nav">
       <Link href="/">
         <h1 className="text-xl text-slate-600">
           <span className="text-2xl font-bold text-teal-400">T</span>ask{" "}
