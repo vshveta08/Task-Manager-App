@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(
+    to right,
+    rgba(208, 252, 235, 0.482),
+    rgba(215, 247, 251, 0.527),
+    rgba(253, 211, 212, 0.363)
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+button:not(.exclude) {
+  background-color: rgba(0, 223, 205, 0.639);
+  box-shadow: 2px 2px 3px rgb(127, 127, 127),
+    inset 3px 3px 4px rgb(212, 235, 249), inset -2px -2px 5px rgb(50, 50, 50);
+  color: black;
+  text-shadow: 1px 1px 2px rgb(223, 223, 223);
+}
+button:not(.exclude):active {
+  box-shadow: 2px 2px 3px rgb(116, 116, 116),
+    inset 2px 2px 5px rgb(151, 151, 151), inset -2px -2px 3px rgb(234, 234, 234);
+}
+input:not(.exclude) {
+  background-color: rgba(202, 212, 250, 0.121);
+  box-shadow: 2px 2px 3px rgb(116, 116, 116);
+  outline: none;
+}
+.nav {
+  box-shadow: 1px 3px 3px rgb(121, 121, 121);
+  text-shadow: 1px 1px 2px rgb(223, 223, 223);
+}
