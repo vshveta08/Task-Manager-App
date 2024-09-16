@@ -60,10 +60,10 @@ const TaskFrom = () => {
   };
 
   return (
-    <div className="flex items-center mt-12 justify-center lg:w-[45rem] md:w-[35em] sm:w-[28em] w-[21em]">
+    <div className="flex items-center py-1 justify-center lg:w-[45rem] md:w-[35em] sm:w-[28em] w-[21em]">
       <form
         onSubmit={submitHandler}
-        className="flex flex-col gap-6 items-center justify-center mt-20 w-full "
+        className="flex flex-col gap-6 items-center justify-center mt-40 w-full "
       >
         <input
           type="text"
