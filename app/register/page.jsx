@@ -53,10 +53,10 @@ const RegisterPage = () => {
   }
 
   return (
-    <div className="flex flex-col items-center min-h-screen justify-center px-16 py-1 ">
+    <div className="flex flex-col items-center min-h-screen px-16 py-1 ">
       <form
         onSubmit={submitHandler}
-        className="flex flex-col gap-6 items-center justify-center lg:w-[30rem] sm:w-[26em] w-[21em]"
+        className="flex flex-col mt-40 gap-6 items-center justify-center lg:w-[30rem] sm:w-[26em] w-[21em]"
       >
         <input
           type="text"
