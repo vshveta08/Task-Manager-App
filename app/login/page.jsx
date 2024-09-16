@@ -82,9 +82,9 @@ const LoginPage = () => {
 
         <button className="px-6 py-2 rounded-sm w-full mt-2">Login</button>
       </form>
-      
+
       <div className="flex items-center gap-2 w-[30rem] mt-4 p-2">
-        <p className="text-sm">Don't have an account? </p>
+        <p className="text-sm">Don&apos;t have an account? </p>
         <Link
           href="/register"
           className="text-sm text-blue-500 hover:underline underline-offset-4"
