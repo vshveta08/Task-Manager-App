@@ -10,8 +10,8 @@ const ProfilePage = () => {
   if (!user._id) return redirect("/login");
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <div className="shadow-md rounded-sm px-14 py-8 flex flex-col gap-8 bg-cyan-50">
+    <div className="flex flex-col items-center min-h-screen">
+      <div className="shadow-md rounded-sm mt-[16em] px-14 py-8 flex flex-col gap-8 bg-cyan-50">
         <h1 className="text-2xl text-slate-700 border-b-2 border-teal-200 py-2">
           Your details
         </h1>

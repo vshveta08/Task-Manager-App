@@ -29,50 +29,8 @@ export const ContextProvider = ({ children }) => {
       }}
     >
       {children}
-      <Toaster toastOptions={{style: {borderRadius: '2px'}}} />
+      <Toaster toastOptions={{ style: { borderRadius: "2px" } }} />
     </Context.Provider>
-  );
-};
-
-// when user is logged-in then show the logout button otherwise show login button
-export const LogoutButton = () => {
-  const { user, setUser } = useContext(Context);
-
-  const handleLogout = async () => {
-    try {
-      const res = await fetch("/api/auth/logout");
-
-      const data = await res.json();
-
-      if (!data.success) toast.error(data.message);
-
-      setUser({});
-
-      toast.success(data.message);
-      window.location.reload();
-    } catch (err) {
-      return toast.error(data.message);
-    }
-  };
-
-  return (
-    <>
-      {user._id ? (
-        <button
-          className="hover:underline underline-offset-4 p-2 rounded-sm exclude"
-          onClick={handleLogout}
-        >
-          Logout
-        </button>
-      ) : (
-        <Link
-          href="/login"
-          className="hover:underline underline-offset-4 p-2 rounded-sm"
-        >
-          Login
-        </Link>
-      )}
-    </>
   );
 };
 
